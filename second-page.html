@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="style2.css">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<title>Getting Started</title>
+
+<body class="container">
+
+<div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</div>
+
+<header class="jumbotron">
+<h2>Welcome to a Detailed Tutorial</h2>
+	<p>Let's learn Photography!</p>
+	<p class="lead"><em>Don't search for something with the search bar... It is broken at the moment</em><p>
+</header>
+
+<h3>Here's what you'll need to get started:</h3>
+
+<button class="accordion">Camera Body</button>
+<section class="panel">
+  <h5>To keep things simple, we're only going over DSLR Bodies</h5>
+	<div class="card" style="width: 25rem;">
+  <img src="./assets/cameradiagram.png" class="card-img-top" alt="dslr-camera-diagram">
+  <div class="card-body">
+    <p class="card-text">Traditional DSLR bodies have mirrors inside. The mirror reflects light the enters the lens and re-directs it to the viewport, so you can see what the lens sees.</p>
+<br>
+<p>The advantage is that you have a clearer view of your image composition, before you press the button to shoot. Another advantage is that it is more cost-effective than the next body we're going to talk about...</p>
+  </div>
+	<div class="card" style="width: 25rem;">
+  <img src="./assets/mirrorless.jpg" class="card-img-top" alt="mirrorless-camera-diagram">
+  <div class="card-body">
+    <p class="card-text">Now, imagine a regular DSLR camera... but without the mirror! You now have a <em>mirrorless</em> camera!</p>
+<br>
+<p>Now the advantage is going to be less moving parts. You just cut your moving parts down by a whopping 50%! Now the only moving part is the shutter of the camera. Your mirrorless camera is likely to have a longer life span than your non-mirrorless. Disadvantage: pricier...</p>
+</div>
+</section>
+
+<button class="accordion">Lenses</button>
+<section class="panel">
+	<h5>We're going to compare two types of lenses</h5>
+	<div class="card" style="width: 25rem;">
+  <img src="./assets/zoomlens-primelens.png" class="card-img-top" alt="zoomlens-primelens-comparison">
+  <div class="card-body">
+	<h6>Zoom Lens</h6>
+    <p class="card-text">Zoom lenses offer versatility. Naturally, versatility always has drawbacks. Like the old saying: "Jack of all trades, master of none"</p>
+<br>
+<p class="card-text">Zoom lenses are generally heavier and they have slower apertures. Slower apertures means poorer performance in low-light conditions. The plus-side is that you can easily control your image composition by changing the focal length</p>
+<br>
+<h6>Prime Lenses (My Favorite)</h6>
+<p class="card-text">These lenses offer only one focal length. A 50mm lens- often referred to as a "Nifty-Fifty", is only going to be able to shoot at a 50mm focal length. It <em>cannot</em> zoom in, nor out.</p>
+<br>
+<p class="card-text">If you are capable of inverse conclusions, you'll quickly realize that the Prime Lens has less versatility, but better low light performance. The lack of versatility forces you into being more careful about your image composition. Beginner photographers are generally encouraged to purchase a Prime Lens as their first additional piece of camera equipment.</p>
+</div>
+</section>
+
+<button class="accordion">Books on the Basics</button>
+<div class="panel">
+  <h4>You can't take glorious photos without learning the ropes first! See below for a great book to buy!</h4>
+	<iframe type="text/html" width="336" height="550" frameborder="0" allowfullscreen style="max-width:100%" src="https://read.amazon.com/kp/card?asin=B004FEFS5E&preview=inline&linkCode=kpe&ref_=cm_sw_r_kb_dp_pZL6Eb66Q1V02" ></iframe>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>
